@@ -1,0 +1,30 @@
+class ApiService{
+  static ApiService? _buildApiServiceObject ;
+  static ApiService getInstance(){
+    if( _buildApiServiceObject == null){
+      _buildApiServiceObject = ApiService._create();
+    }
+    return _buildApiServiceObject!;
+  }
+  String? _dio;
+  ApiService._(){
+    print("Api service created");
+  }
+
+  String get dio => _dio ?? "empty";
+
+  set dio(String value){
+    _dio = value;
+  }
+  ApiService._create(){
+    print("api created par");
+  }
+
+
+}
+
+    ApiService api = ApiService.getInstance();
+    api.dio = "This is data";
+    print(api.dio);
+    ApiService api2 = ApiService.getInstance();
+    print(api2.dio);
