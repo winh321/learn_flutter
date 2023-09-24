@@ -1,4 +1,4 @@
-in dart
+In dart
 
 
 class _HomeState extends State<Home> {
@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
   }
 }
 
-in kotlin
+In kotlin
 
 package com.example.xxx.exx
 import android.widget.Toast
