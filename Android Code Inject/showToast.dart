@@ -1,11 +1,11 @@
-in dart
+In dart
 
     var channel = MethodChannel("babadevs");
   showToast(){
     channel.invokeMethod("showToast");
   }
 
-in kotlin
+In kotlin
 
   package com.example.xxx.exx
 import android.widget.Toast
